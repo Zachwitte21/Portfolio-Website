@@ -1,5 +1,12 @@
 <script setup>
-import Project from '../components/Project.vue';
+// imports: 
+import Timeline from '../components/Timeline.vue'
+
+const timelineEvents = [
+  { title: "Started Portfolio Project", date: "Jan 2025", description: "Began developing a Vue.js portfolio." },
+  { title: "Designed Navbar", date: "Feb 2025", description: "Implemented a sliding navbar for easy navigation." },
+  { title: "Added Timeline", date: "March 2025", description: "Created a timeline component for project milestones." },
+];
 </script>
 
 <template>
@@ -18,15 +25,15 @@ import Project from '../components/Project.vue';
         </p>
         <img src="../assets/me_monkey.jpg"/>
       </div>
-      <Project 
-        name="DCS" 
-        description="Software Developer" 
-        image="../assets/dcs.png" 
-      />
+      <div>
+        <img src="../assets/dcs.png"/>
+
+
+      </div>
+
+      <Timeline :events="timelineEvents" />
+      
       <footer>
-        <h3>Email: 
-          <a href="mailto:zachwitte21@gmail.com">zachwitte21@gmail.com</a>
-        </h3>
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/zachary-witte-2025/" target="_blank">LinkedIn</a>
@@ -36,4 +43,3 @@ import Project from '../components/Project.vue';
       </footer>
     </div>
   </template>
-  
