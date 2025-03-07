@@ -1,12 +1,53 @@
-.about-me {
-  padding: 20px;
-  background-color: #f9f9f9;
-  color: black;
-  border-radius: 8px;
-  margin-top: 20px;
+.about-me-container {
+  display: flex;
+  align-items: center; /* Aligns image and text vertically */
+  justify-content: space-between; /* Distributes space evenly */
+  max-width: 90%; /* Expands section width */
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  text-align: left;
+  gap: 40px; /* Space between text and image */
 }
 
-.photo-album {
-  width: 100%;
-  max-width: 300px;
+.about-me-text {
+  flex: 1;
+  max-width: 50%; /* Limits text width */
+}
+
+.about-me-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.about-me-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.linkedin-link {
+  display: block;
+  font-weight: bold;
+  color: #0073b1;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.linkedin-link:hover {
+  text-decoration: underline;
+}
+
+.about-me-photo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center; /* Keeps it aligned */
+  max-width: 40%; /* Limits the image width */
+}
+
+.profile-photo {
+  max-height: 400px; /* Ensures the image doesn’t get too large */
+  width: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }

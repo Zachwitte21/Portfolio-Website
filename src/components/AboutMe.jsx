@@ -1,32 +1,42 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './AboutMe.css';
 
-const photos = [
-  '/me&monkey.jpg',  
-  // Add more photo paths as needed
-];
-
 function AboutMe() {
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
   return (
-    <section>
-      <section className="about-me">
+    <section className="about-me-container">
+      {/* Left Section - Text */}
+      <div className="about-me-text">
+        <h2>About Me</h2>
         <p>
-        Innovative and detail-oriented Software Engineer with hands-on experience in cloud computing, backend development, and database management. Adept at designing scalable web applications, 
-        optimizing AWS infrastructure, and developing automation tools to improve efficiency. Passionate about solving complex technical challenges and delivering high-quality software solutions. 
-        Strong foundation in Agile development and cross-functional collaboration, with a keen interest in AWS cloud architecture and backend systems. Looking forward to leveraging my skills to 
-        contribute to impactful projects and drive technological innovation.
+          I am an <strong>innovative and detail-oriented Software Engineer</strong> with hands-on experience in 
+          <strong> cloud computing, backend development, and database management</strong>. My expertise includes designing 
+          <strong> scalable web applications</strong>, optimizing <strong>AWS infrastructure</strong>, and developing 
+          <strong> automation tools</strong> to improve efficiency.
         </p>
         <p>
-          In my free time, I enjoy racing cars, spending times with friends, and flying drones. Feel free to connect with me on linkedin at: 
+          Passionate about <strong>solving complex technical challenges</strong> and delivering 
+          <strong> high-quality software solutions</strong>, I have a strong foundation in 
+          <strong> Agile development</strong> and <strong>cross-functional collaboration</strong>. 
+          I am particularly interested in <strong>AWS cloud architecture</strong> and <strong>backend systems</strong>.
         </p>
-        <a href="https://www.linkedin.com/in/zacharywitte2025/" target="_blank" rel="noopener noreferrer">linkedin.com/in/zacharywitte2025/</a>
-      </section>
-      <section className="photo-album">
-        <img src={photos[currentPhotoIndex]} alt="About me" className="photo" />
-      </section>
+        <p>
+          In my free time, I enjoy <strong>racing cars</strong>, <strong>spending time with friends</strong>, 
+          and <strong>flying drones</strong>. Feel free to connect with me on LinkedIn:
+        </p>
+        <a href="https://www.linkedin.com/in/zacharywitte2025/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="linkedin-link">
+          linkedin.com/in/zacharywitte2025/
+        </a>
+      </div>
+
+      {/* Right Section - Photo */}
+      <div className="about-me-photo">
+        <img src="/me&monkey.jpg" alt="Zachary Witte" className="profile-photo" />
+      </div>
     </section>
   );
 }
 
-export default AboutMe; 
+export default AboutMe;
