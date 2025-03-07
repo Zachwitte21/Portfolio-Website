@@ -12,10 +12,22 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src="suit_picture.png" alt="Profile" className="navbar-image" />
-      <ul className="navbar-links">
-        <li onClick={() => scrollToSection('about-me')}>About Me</li>
-        <li onClick={() => scrollToSection('projects')}>Projects</li>
-        <li onClick={() => scrollToSection('contact')}>Contact</li>
+      <ul className="navbar-list">
+        <li>
+          <button onClick={() => scrollToSection('about-me')} className="nav-button">
+            About Me
+          </button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection('projects')} className="nav-button">
+            Projects
+          </button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection('contact')} className="nav-button">
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
   );
