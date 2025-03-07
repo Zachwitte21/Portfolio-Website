@@ -8,26 +8,19 @@ const photos = [
 
 function AboutMe() {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-
-  /* Re-add when I have more photos.
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 5000); // Change photo every 5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-  */
-
   return (
-    <section className="about-me-container">:
+    <section>
       <section className="about-me">
         <p>
-          Hello! I'm Zachary Witte, a passionate developer with experience in building web applications using modern technologies like React, Vite, and more. I love creating intuitive and dynamic user experiences.
+        Innovative and detail-oriented Software Engineer with hands-on experience in cloud computing, backend development, and database management. Adept at designing scalable web applications, 
+        optimizing AWS infrastructure, and developing automation tools to improve efficiency. Passionate about solving complex technical challenges and delivering high-quality software solutions. 
+        Strong foundation in Agile development and cross-functional collaboration, with a keen interest in AWS cloud architecture and backend systems. Looking forward to leveraging my skills to 
+        contribute to impactful projects and drive technological innovation.
         </p>
         <p>
-          In my free time, I enjoy [Your Hobbies/Interests]. Feel free to connect with me on [Your Social Media/Contact Info].
+          In my free time, I enjoy racing cars, spending times with friends, and flying drones. Feel free to connect with me on linkedin at: 
         </p>
+        <a href="https://www.linkedin.com/in/zacharywitte2025/" target="_blank" rel="noopener noreferrer">linkedin.com/in/zacharywitte2025/</a>
       </section>
       <section className="photo-album">
         <img src={photos[currentPhotoIndex]} alt="About me" className="photo" />
