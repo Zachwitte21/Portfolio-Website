@@ -4,42 +4,35 @@ import './Projects.css';
 const projects = [
   {
     title: 'Phishnet AI',
-    image: '/pixelmon.png',
+    image: '/website.png',
     description: '',
-    photos: ['/server_image.png',],
+    photos: ['/website.png',],
     link: 'https://www.phishnetai.com/',
   },
   {
-    title: 'Phishnet AI',
-    image: '/pixelmon.png',
+    title: 'Drone Research',
+    image: '/UDel.png',
     description: '',
-    photos: ['/server_image.png',],
-    link: 'https://www.phishnetai.com/',
-  },
-  {
-    title: 'Phishnet AI',
-    image: '/pixelmon.png',
-    description: '',
-    photos: ['/server_image.png',],
+    photos: ['/website.png',],
     link: 'https://www.phishnetai.com/',
   },
   {
     title: 'AWS Scalable Gaming Server',
     image: '/pixelmon.png',
     description: 'In this project, I accomplished the hosting of a dynamically scalable Minecraft server using Amazon Web Services infrastructure, specifically AWS S3 and EC2 instances, with the aid of the Command Line Interface (CLI). This ambitious endeavor showcased my proficiency in cloud computing as I leveraged S3 for data storage, ensuring seamless world backups and configuration files management, while EC2 instances were employed for flexible server hosting that could be easily adjusted to accommodate varying player loads. ',
-    photos: ['/server_image.png',],
+    photos: ['/pixelmon.png',],
     link: '',
   },
   {
     title: 'Personal VPN Server',
-    image: '/vpn.jpg',
+    image: '/vpn.png',
     description: 'For my first cloud project I created a VPN infrastructure utilizing Amazon Web Services EC2 instances and the AWS AMI Marketplace. This venture was a valuable learning experience, enabling me to gain fundamental knowledge of connecting to and managing EC2 instances across multiple regions, while delving into the essentials of AWS services. Through this project, I honed my skills in configuring and maintaining virtual private networks. ',
-    photos: [],
+    photos: ['/vpn.png',],
     link: '',
   },
   {
     title: 'Old Portfolio Website',
-    image: '/website.jpg',
+    image: '/website.png',
     description: 'This was a project I did to showcase my skills and projects at the start of college. I used HTML and CSS to create the static website and hosted it through an S3 bucket on the AWS cloud. I learned a lot about hosting websites in the AWS cloud and how to use several services like S3, Route 53, EC2, and IAM.',
     photos: ['/website-image-1.png', '/website-image-2.png'],
     link: 'https://zacharywitte.com.s3.amazonaws.com/index.html',
@@ -95,6 +88,10 @@ function Projects() {
           onClick={() => handleProjectClick(project)}
         >
           <img src={project.image} alt={project.title} className="project-image" />
+          <button className="flex items-center gap-2 px-6 py-3 text-white bg-black rounded-full transition-transform transform hover:scale-105 hover:bg-gray-800">
+            View Project
+            <span className="w-4 h-4 border-r-2 border-b-2 border-white rotate-45"></span>
+          </button>
           <div className="project-title">{project.title}</div>
         </div>
       ))}

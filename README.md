@@ -14,4 +14,5 @@ If you are developing a production application, we recommend using TypeScript an
 
 # Running the frontend
 - npm install 
+- npm install @formspree/react --legacy-peer-deps (For the contact me form to work)
 - npm run dev

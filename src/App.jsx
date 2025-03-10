@@ -17,7 +17,7 @@ function App() {
         <div className="footer-content">
           <div>
             <h3>Zachary Witte</h3>
-            <p>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</p>
+            <p>A Full-Stack Software Engineer passionate about building scalable applications across web, mobile, and AI. I enjoy leveraging AWS cloud technologies to create efficient, high-performance solutions that drive innovation and success.</p>
           </div>
           <div>
             <h3>Social</h3>
@@ -25,7 +25,6 @@ function App() {
               <a href="#">LinkedIn</a>
               <a href="#">GitHub</a>
               <a href="#">Twitter</a>
-              <a href="#">YouTube</a>
             </div>
           </div>
         </div>
