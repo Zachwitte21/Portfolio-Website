@@ -1,42 +1,39 @@
-import React from 'react';
-import './AboutMe.css';
+import React from "react";
+import "./AboutMe.css";
 
-function AboutMe() {
+const AboutMe = () => {
   return (
-    <section className="about-me-container">
-      {/* Left Section - Text */}
-      <div className="about-me-text">
-        <h2>About Me</h2>
-        <p>
-          I am an <strong>innovative and detail-oriented Software Engineer</strong> with hands-on experience in 
-          <strong> cloud computing, backend development, and database management</strong>. My expertise includes designing 
-          <strong> scalable web applications</strong>, optimizing <strong>AWS infrastructure</strong>, and developing 
-          <strong> automation tools</strong> to improve efficiency.
-        </p>
-        <p>
-          Passionate about <strong>solving complex technical challenges</strong> and delivering 
-          <strong> high-quality software solutions</strong>, I have a strong foundation in 
-          <strong> Agile development</strong> and <strong>cross-functional collaboration</strong>. 
-          I am particularly interested in <strong>AWS cloud architecture</strong> and <strong>backend systems</strong>.
-        </p>
-        <p>
-          In my free time, I enjoy <strong>racing cars</strong>, <strong>spending time with friends</strong>, 
-          and <strong>flying drones</strong>. Feel free to connect with me on LinkedIn:
-        </p>
-        <a href="https://www.linkedin.com/in/zacharywitte2025/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="linkedin-link">
-          linkedin.com/in/zacharywitte2025/
-        </a>
-      </div>
+    <div className="about-container">
+      <div className="content">
+        <section className="intro">
+          <h1 className="section-title">Get to know me!</h1>
+          <p>
+            I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that lead to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
+          </p>
+          <p>
+            I also like sharing content related to the stuff that I have learned over the years in <strong>Web Development</strong> so it can help other people in the Dev Community. Feel free to Connect or Follow me on my
+            <a href="#" className="link"> LinkedIn </a> and
+            <a href="#" className="link"> Instagram </a>
+            where I post useful content related to Web Development and Programming.
+          </p>
+          <p>
+            I'm open to <strong>Job</strong> opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, then don't hesitate to <strong>contact</strong> me.
+          </p>
+        </section>
 
-      {/* Right Section - Enlarged Photo */}
-      <div className="about-me-photo">
-        <img src="/me&monkey.jpg" alt="Zachary Witte with Monkey" className="profile-photo" />
+        <section className="skills expanded">
+          <h1 className="section-title">My Skills</h1>
+          <div className="skills-list">
+            {[
+              "HTML", "CSS", "JavaScript", "React", "WordPress", "PHP", "SASS", "GIT", "GitHub", "Responsive Design", "SEO", "Terminal"
+            ].map((skill) => (
+              <span key={skill} className="skill">{skill}</span>
+            ))}
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default AboutMe;
