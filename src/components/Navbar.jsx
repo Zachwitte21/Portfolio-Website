@@ -12,7 +12,13 @@ function Navbar() {
   return (
     <nav className="navbar">
       <img src="suit_picture.png" alt="Profile" className="navbar-image" />
+      <span className="navbar-name">Zachary Witte</span>
       <ul className="navbar-list">
+        <li>
+          <button onClick={() => scrollToSection('home')} className="nav-button">
+            Home
+          </button>
+        </li>
         <li>
           <button onClick={() => scrollToSection('about-me')} className="nav-button">
             About Me

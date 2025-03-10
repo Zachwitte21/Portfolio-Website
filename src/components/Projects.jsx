@@ -3,6 +3,27 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Phishnet AI',
+    image: '/pixelmon.png',
+    description: '',
+    photos: ['/server_image.png',],
+    link: 'https://www.phishnetai.com/',
+  },
+  {
+    title: 'Phishnet AI',
+    image: '/pixelmon.png',
+    description: '',
+    photos: ['/server_image.png',],
+    link: 'https://www.phishnetai.com/',
+  },
+  {
+    title: 'Phishnet AI',
+    image: '/pixelmon.png',
+    description: '',
+    photos: ['/server_image.png',],
+    link: 'https://www.phishnetai.com/',
+  },
+  {
     title: 'AWS Scalable Gaming Server',
     image: '/pixelmon.png',
     description: 'In this project, I accomplished the hosting of a dynamically scalable Minecraft server using Amazon Web Services infrastructure, specifically AWS S3 and EC2 instances, with the aid of the Command Line Interface (CLI). This ambitious endeavor showcased my proficiency in cloud computing as I leveraged S3 for data storage, ensuring seamless world backups and configuration files management, while EC2 instances were employed for flexible server hosting that could be easily adjusted to accommodate varying player loads. ',

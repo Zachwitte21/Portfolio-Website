@@ -1,13 +1,13 @@
-.navbar {
-    position: fixed; /* Makes the navbar fixed on top */
+  .navbar {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: transparent;
+    justify-content: space-between;
+    background-color: black;
     padding: 10px 20px;
-    z-index: 1000;
   }
   
   .navbar-image {
@@ -17,10 +17,18 @@
     margin-right: 20px;
   }
   
+  .navbar-name {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
   .navbar-list {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin-left: auto; /* Push links to the right */
+    margin-right: 5%;
   }
   
   .nav-button {

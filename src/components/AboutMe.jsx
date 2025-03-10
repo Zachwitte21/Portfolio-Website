@@ -1,6 +1,5 @@
 import React from 'react';
 import './AboutMe.css';
-import Navbar from './Navbar';
 
 function AboutMe() {
   return (
