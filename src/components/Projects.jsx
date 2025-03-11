@@ -5,16 +5,30 @@ const projects = [
   {
     title: 'Phishnet AI',
     image: '/website.png',
-    description: '',
+    description: 'I am working on an anti-phishing website that uses my RESTful API to detect phishing scams with the OpenAI API. The RESTful API and MySQL database are complete and hosted in the AWS cloud. Moving forward, the plan is to complete the frontend ReactJS website and host it through AWS.',
     photos: ['/website.png',],
     link: 'https://www.phishnetai.com/',
   },
   {
-    title: 'Drone Research',
+    title: 'Personal Compiler Project',
+    image: '/python-logo.png',
+    description: 'For this project, I worked on developing a personal Python compiler that translates and executes code efficiently. The project includes various modules for parsing, executing, and optimizing Python code, leveraging custom syntax trees and lambda conversions. This project is not fully complete, but I will continue to finish this project over the coming months. ',
+    photos: ['/python-logo.png',],
+    link: '',
+  },
+  {
+    title: 'Drone Virtually Integrated Project',
     image: '/UDel.png',
-    description: '',
-    photos: ['/website.png',],
-    link: 'https://www.phishnetai.com/',
+    description: 'Worked with a small team to develop high quality drone scans of the University of Delaware campus. We used a combination of lidar, photogrammetry, and machine learning to create the 3D model. Recently we have worked on creating a virtual tour using our 3D model to deliver our research to the public. ',
+    photos: ['/CampusScan.png', '/udeldrone.jpg', '/djicontroller.jpg'],
+    link: 'https://vip.udel.edu/project/drone/',
+  },
+  {
+    title: 'UDCIS Sage Discord Bot',
+    image: '/sage.png',
+    description: 'As part of the Sage Discord bot project, I developed several user commands using TypeScript to enhance user interaction and engagement. These commands allowed users to provide feedback, leave reviews, and access productivity tools tailored to the UDel Computer Science community.',
+    photos: ['/sage.png',],
+    link: 'https://ud-cis-discord.github.io/sage_info/',
   },
   {
     title: 'AWS Scalable Gaming Server',
@@ -78,6 +92,20 @@ function Projects() {
       return () => clearInterval(interval);
     }
   }, [selectedProject]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeOverlay();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div className="projects">

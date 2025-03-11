@@ -7,7 +7,7 @@ import './ContactForm.css';
 function ContactForm() {
   const [state, handleSubmit] = useForm("mnnpqjqg");
   if (state.succeeded) {
-    return <p>I will get back to you as soon as possible!</p>;
+    return <p>Thank you for reaching out! I will get back to you as soon as possible!</p>;
   }
   return (
     <form onSubmit={handleSubmit}>
