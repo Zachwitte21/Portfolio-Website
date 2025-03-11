@@ -19,6 +19,10 @@ const AboutMe = () => {
           <strong> Agile development</strong> and <strong>cross-functional collaboration</strong>. 
           I am particularly interested in <strong>AWS cloud architecture</strong> and <strong>backend systems</strong>.
           </p>
+          <p>
+            Feel free to <strong>reach out</strong> to me if you'd like to discuss a project or just say hello! The best way to reach me is through my <strong>LinkedIn</strong>: 
+          </p>
+          <a href="https://www.linkedin.com/in/zacharywitte2025" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/zacharywitte2025</a>
         </section>
 
         <section className="skills expanded">

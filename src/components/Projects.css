@@ -30,6 +30,10 @@ body, html {
     object-fit: cover;
     box-sizing: border-box;
   }
+
+  .project-image:hover {
+    transform: scale(1.1);
+  }
   
   .project-title {
     position: absolute;

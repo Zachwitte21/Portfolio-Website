@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Linkedin, Github, Twitter } from 'lucide-react'; // Import Lucide icons
 
 function Home() {
   return (

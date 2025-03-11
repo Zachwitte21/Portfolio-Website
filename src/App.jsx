@@ -1,9 +1,10 @@
-import './App.css'
-import AboutMe from './components/AboutMe'
-import Projects from './components/Projects'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Contact from './components/Contact'
+import './App.css';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import { Linkedin, Github, Twitter } from 'lucide-react'; // Import Lucide icons
 
 function App() {
   return (
@@ -25,14 +26,19 @@ function App() {
         <div className="footer-content">
           <div>
             <h3>Zachary Witte</h3>
-            <p>A Full-Stack Software Engineer passionate about building scalable applications across web, mobile, and AI. I enjoy leveraging AWS cloud technologies to create efficient, high-performance solutions that drive innovation and success.</p>
+            <p>
+              A Full-Stack Software Engineer passionate about building scalable applications across web, mobile, and AI. I enjoy leveraging AWS cloud technologies to create efficient, high-performance solutions that drive innovation and success.
+            </p>
           </div>
-          <div>
-            <h3>Social</h3>
+          <div className="social-icons-container">
+            <h3>Personal Links</h3>
             <div className="social-icons">
-              <a href="#">LinkedIn</a>
-              <a href="#">GitHub</a>
-              <a href="#">Twitter</a>
+              <a href="https://www.linkedin.com/in/zacharywitte2025" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="social-icon linkedin" />
+              </a>
+              <a href="https://github.com/Zachwitte21" target="_blank" rel="noopener noreferrer">
+                <Github className="social-icon github" />
+              </a>
             </div>
           </div>
         </div>
@@ -41,7 +47,7 @@ function App() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

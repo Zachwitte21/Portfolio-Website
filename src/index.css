@@ -17,7 +17,6 @@
   --link-color: #646cff;
   --button-background: #f9f9f9;
   --background-color-alt: #f0f0f0; /* Light theme alternate background */
-  --background-image: url('light-texture.png');
 }
 
 [data-theme='dark'] {

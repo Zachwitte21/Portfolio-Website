@@ -21,13 +21,22 @@
 /* Footer content layout */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Adjusted for better spacing */
   align-items: flex-start;
   text-align: left;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* Moves the social links section further left */
+.social-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+  margin-left: -40px; /* Moves Personal Links section to the left */
 }
 
 .footer-content h3 {
@@ -61,11 +70,27 @@
 /* Responsive Fix for Narrow Screens */
 @media (max-width: 768px) {
   .footer-content {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-content div:first-child p {
-      max-width: 100%;
+    max-width: 100%;
   }
+
+  /* Centers the social links on small screens */
+  .social-icons-container {
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
