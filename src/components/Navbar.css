@@ -45,3 +45,21 @@
   text-decoration: underline;
 }
   
+.theme-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}

@@ -100,7 +100,6 @@ function Projects() {
         <div className="overlay">
           <div className="overlay-content">
             <div>
-              <button className="close-button" onClick={closeOverlay}>X</button>
               <h2>{selectedProject.title}</h2>
               <p>{selectedProject.description}</p>
               {selectedProject.link && (

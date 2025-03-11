@@ -3,7 +3,6 @@ form {
   flex-direction: column;
   gap: 15px;
   margin: 20px 0; /* Add margin to separate from header */
-  max-height: 50vw;
   width: 100%;
   max-width: 500px; /* Limit form width */
   padding: 20px;

@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 import './Navbar.css';
 
 function Navbar() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    setTheme(systemTheme);
-    document.documentElement.setAttribute('data-theme', systemTheme);
+    const savedTheme = localStorage.getItem("theme") || systemTheme;
+    setTheme(savedTheme);
+    document.documentElement.setAttribute('data-theme', savedTheme);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   const scrollToSection = (id) => {
@@ -66,10 +69,8 @@ function Navbar() {
             Contact
           </button>
         </li>
-        <li>
-          <button onClick={toggleTheme} className="nav-button">
-            Toggle Theme
-          </button>
+        <li className="theme-toggle" onClick={toggleTheme}>
+          {theme === 'light' ? <FaMoon size={20} className="icon" /> : <FaSun size={20} className="icon" />}
         </li>
       </ul>
     </nav>
