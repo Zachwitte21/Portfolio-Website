@@ -9,10 +9,18 @@ function App() {
   return (
     <div className="app-container">
       <Navbar />
-      <Home />
-      <AboutMe />
-      <Projects />
-      <Contact />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="about-container">
+        <AboutMe />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="contact-container">
+        <Contact />
+      </div>
       <footer className="footer">
         <div className="footer-content">
           <div>

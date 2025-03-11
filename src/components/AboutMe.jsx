@@ -8,16 +8,16 @@ const AboutMe = () => {
         <section className="intro">
           <h1 className="section-title">Get to know me!</h1>
           <p>
-            I'm a <strong>Frontend Focused Web Developer</strong> building and managing the Front-end of Websites and Web Applications that lead to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
+          I am an <strong>innovative and detail-oriented Software Engineer</strong> with hands-on experience in 
+          <strong> cloud computing, full-stack development, and database management</strong>. My expertise includes designing 
+          <strong> scalable web applications</strong>, optimizing <strong>AWS infrastructure</strong>, and developing 
+          <strong> automation tools</strong> to improve efficiency.
           </p>
           <p>
-            I also like sharing content related to the stuff that I have learned over the years in <strong>Web Development</strong> so it can help other people in the Dev Community. Feel free to Connect or Follow me on my
-            <a href="#" className="link"> LinkedIn </a> and
-            <a href="#" className="link"> Instagram </a>
-            where I post useful content related to Web Development and Programming.
-          </p>
-          <p>
-            I'm open to <strong>Job</strong> opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, then don't hesitate to <strong>contact</strong> me.
+          I am passionate about <strong>solving complex technical challenges</strong> and delivering 
+          <strong> high-quality software solutions</strong>, I have a strong foundation in 
+          <strong> Agile development</strong> and <strong>cross-functional collaboration</strong>. 
+          I am particularly interested in <strong>AWS cloud architecture</strong> and <strong>backend systems</strong>.
           </p>
         </section>
 
@@ -25,7 +25,7 @@ const AboutMe = () => {
           <h1 className="section-title">My Skills</h1>
           <div className="skills-list">
             {[
-              "HTML", "CSS", "JavaScript", "React", "WordPress", "PHP", "SASS", "GIT", "GitHub", "Responsive Design", "SEO", "Terminal"
+              "React", "AWS", "JavaScript", "Java", "MySQL", "Vue", "Python", "Docker", "Git", "C++", "SQL"
             ].map((skill) => (
               <span key={skill} className="skill">{skill}</span>
             ))}

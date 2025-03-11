@@ -23,9 +23,27 @@ function Navbar() {
     }
   };
 
+  const scrollToSectionProjects = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = id === 'contact-container' || id === 'projects' ? -80 : 0; // Adjust offset as needed
+      const topPosition = section.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: topPosition, behavior: 'smooth' });
+    }
+  };
+
+  const scrollToSectionContact = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = id === 'contact-container' || id === 'projects' ? -50 : 0; // Adjust offset as needed
+      const topPosition = section.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: topPosition, behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navbar">
-      <img src="suit_picture.png" alt="Profile" className="navbar-image" />
+      <img src="finished-headshot.png" alt="Profile" className="navbar-image" />
       <span className="navbar-name">Zachary Witte</span>
       <ul className="navbar-list">
         <li>
@@ -34,17 +52,17 @@ function Navbar() {
           </button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('about-me')} className="nav-button">
+          <button onClick={() => scrollToSection('about-container')} className="nav-button">
             About Me
           </button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('projects')} className="nav-button">
+          <button onClick={() => scrollToSectionProjects('projects')} className="nav-button">
             Projects
           </button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('contact')} className="nav-button">
+          <button onClick={() => scrollToSectionContact('contact-container')} className="nav-button">
             Contact
           </button>
         </li>

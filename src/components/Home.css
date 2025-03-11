@@ -1,10 +1,12 @@
 .home {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 80vh;
-  background-image: var(--background-image);
   color: var(--text-color);
   text-align: left;
   width: 100%;

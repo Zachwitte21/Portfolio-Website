@@ -1,11 +1,11 @@
 .contact-container {
+  background-image: var(--background-image);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh; /* Adjust height as needed */
-  background-color: var(--background-color);
-  color: var(--text-color);
+  height: 120vh; /* Adjust height as needed */
   padding: 20px;
   text-align: center;
 }
