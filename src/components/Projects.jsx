@@ -5,15 +5,15 @@ const projects = [
   {
     title: 'MakerSpace Inventory System ',
     image: 'UDel.png',
-    description: 'This is my senior design project where we build an inventory management system for the University of Delaware MakerSpace.',
-    photos: [],
+    description: 'This is my current senior design project where we are building an inventory management system for the University of Delaware MakerSpace. My contribution so far has been to develop a user friendly frontend using Vue and TypeScript, hosting the project securely on AWS, and dockerizing the application. The project is still in progress, but we are on track to finish by the end of the semester.',
+    photos: ['/UDel.png'],
     link: '',
   },
   {
     title: 'Phishnet AI',
-    image: '/website.png',
+    image: '/phishnet.png',
     description: 'I am working on an anti-phishing website that uses my RESTful API to detect phishing scams with the OpenAI API. The RESTful API and MySQL database are complete and hosted in the AWS cloud. Moving forward, the plan is to complete the frontend ReactJS website and host it through AWS.',
-    photos: ['/website.png',],
+    photos: ['/phishnet.png',],
     link: 'https://www.phishnetai.com/',
   },
   {

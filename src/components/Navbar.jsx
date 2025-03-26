@@ -38,7 +38,7 @@ function Navbar() {
   const scrollToSectionContact = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      const offset = id === 'contact-container' || id === 'projects' ? -50 : 0; // Adjust offset as needed
+      const offset = id === 'contact-container' || id === 'projects' ? +100 : 0; // Adjust offset as needed
       const topPosition = section.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: topPosition, behavior: 'smooth' });
     }
