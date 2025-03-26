@@ -3,6 +3,13 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'MakerSpace Inventory System ',
+    image: 'UDel.png',
+    description: 'This is my senior design project where we build an inventory management system for the University of Delaware MakerSpace.',
+    photos: [],
+    link: '',
+  },
+  {
     title: 'Phishnet AI',
     image: '/website.png',
     description: 'I am working on an anti-phishing website that uses my RESTful API to detect phishing scams with the OpenAI API. The RESTful API and MySQL database are complete and hosted in the AWS cloud. Moving forward, the plan is to complete the frontend ReactJS website and host it through AWS.',
